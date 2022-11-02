@@ -17,6 +17,7 @@ function NewsPage(){
            <li>Something Else</li>
            <li>Welcome</li>
            <li>yaudah</li>
+           <li>baruuu</li>
         </ul>
         </Fragment>
     )
