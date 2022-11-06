@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import MeetUpList from '../components/meetups/MeetupList';
 
 
+// dummy data
 const DUMMY_MEETUPS = [{
    id: 'm1',
    title: 'A First Meetup',
