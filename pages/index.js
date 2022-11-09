@@ -1,32 +1,26 @@
-import { useEffect } from 'react';
+import Head from 'next/head';
 import MeetUpList from '../components/meetups/MeetupList';
 import { MongoClient } from 'mongodb';
+import { Fragment } from 'react';
 
 
-const DUMMY_MEETUPS = [{
-   id: 'm1',
-   title: 'A First Meetup',
-   image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg',
-   address: 'some addres 5, 123456 Some City',
-   description : 'This is a first mettup!'
-},
-{
-    id: 'm2',
-    title: 'A Second Meetup',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/1280px-Stadtbild_M%C3%BCnchen.jpg',
-    address: 'some addres 5, 123456 Some City',
-    description : 'This is a second mettup!'
- }
 
-]
 
 
 function HomePage(props){
 
 
     return (
-
+     <Fragment>
+      <Head>
+         <title>React Meetups</title>
+         <meta
+            name='description'
+            content='Browse a huge list of highly active React Meetups!'
+         />
+      </Head>
      <MeetUpList meetups={props.meetups} />
+     </Fragment>
 
 )
 }
