@@ -43,7 +43,7 @@ client.close();
         // falbback agar tidak error
         // fallback set false => kadi bila user mengetik di url m3
         // maka akan me return 404
-        fallback: false,
+        fallback: 'blocking',
         // which page should be pre-generated
         paths: meetups.map((meetup) => ({
                 params: {meetupId: meetup._id.toString()},
