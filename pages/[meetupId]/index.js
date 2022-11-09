@@ -75,7 +75,7 @@ export async function getStaticProps(context){
         _id: ObjectId(meetupId),
     })
 
- 
+//  tes
 
 client.close();
 
